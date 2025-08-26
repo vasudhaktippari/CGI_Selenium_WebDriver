@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-26T17:20:41 IST" name="Suite" finished-at="2025-08-26T17:22:29 IST" duration-ms="107504">
+    <groups>
+    </groups>
+    <test started-at="2025-08-26T17:20:41 IST" name="Lab9" finished-at="2025-08-26T17:21:09 IST" duration-ms="28141">
+      <class name="pkg.Lab9_TestNG2">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:pkg.Lab9_TestNG2@145f66e3]" started-at="2025-08-26T17:20:41 IST" name="beforeTest" finished-at="2025-08-26T17:20:41 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:pkg.Lab9_TestNG2@145f66e3]" started-at="2025-08-26T17:20:41 IST" name="beforeClass" finished-at="2025-08-26T17:20:41 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:pkg.Lab9_TestNG2@145f66e3]" started-at="2025-08-26T17:20:41 IST" name="beforeMethod" finished-at="2025-08-26T17:20:44 IST" duration-ms="2907" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="ecommerceTest(java.lang.Integer,java.lang.String)[pri:0, instance:pkg.Lab9_TestNG2@145f66e3]" started-at="2025-08-26T17:20:44 IST" name="ecommerceTest" data-provider="dp" finished-at="2025-08-26T17:20:53 IST" duration-ms="8682" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Mobile]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ecommerceTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:pkg.Lab9_TestNG2@145f66e3]" started-at="2025-08-26T17:20:53 IST" name="afterMethod" finished-at="2025-08-26T17:20:53 IST" duration-ms="429" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:pkg.Lab9_TestNG2@145f66e3]" started-at="2025-08-26T17:20:53 IST" name="beforeMethod" finished-at="2025-08-26T17:20:54 IST" duration-ms="1212" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="ecommerceTest(java.lang.Integer,java.lang.String)[pri:0, instance:pkg.Lab9_TestNG2@145f66e3]" started-at="2025-08-26T17:20:54 IST" name="ecommerceTest" data-provider="dp" finished-at="2025-08-26T17:21:03 IST" duration-ms="8813" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Monitors]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ecommerceTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:pkg.Lab9_TestNG2@145f66e3]" started-at="2025-08-26T17:21:03 IST" name="afterMethod" finished-at="2025-08-26T17:21:04 IST" duration-ms="297" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:pkg.Lab9_TestNG2@145f66e3]" started-at="2025-08-26T17:21:04 IST" name="afterClass" finished-at="2025-08-26T17:21:04 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:pkg.Lab9_TestNG2@145f66e3]" started-at="2025-08-26T17:21:09 IST" name="afterTest" finished-at="2025-08-26T17:21:09 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- pkg.Lab9_TestNG2 -->
+      <class name="pkg.Lab9_TestNG1">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:pkg.Lab9_TestNG1@4135c3b]" started-at="2025-08-26T17:21:04 IST" name="beforeMethod" finished-at="2025-08-26T17:21:05 IST" duration-ms="1454" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="lab8Flow()[pri:0, instance:pkg.Lab9_TestNG1@4135c3b]" started-at="2025-08-26T17:21:05 IST" name="lab8Flow" finished-at="2025-08-26T17:21:08 IST" duration-ms="3399" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lab8Flow -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:pkg.Lab9_TestNG1@4135c3b]" started-at="2025-08-26T17:21:08 IST" name="afterMethod" finished-at="2025-08-26T17:21:09 IST" duration-ms="848" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- pkg.Lab9_TestNG1 -->
+    </test> <!-- Lab9 -->
+    <test started-at="2025-08-26T17:21:09 IST" name="edge" finished-at="2025-08-26T17:21:50 IST" duration-ms="40418">
+      <class name="pkg.Lab9_TestNG2">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:pkg.Lab9_TestNG2@38425407]" started-at="2025-08-26T17:21:09 IST" name="beforeTest" finished-at="2025-08-26T17:21:09 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:pkg.Lab9_TestNG2@38425407]" started-at="2025-08-26T17:21:09 IST" name="beforeClass" finished-at="2025-08-26T17:21:09 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:pkg.Lab9_TestNG2@38425407]" started-at="2025-08-26T17:21:09 IST" name="beforeMethod" finished-at="2025-08-26T17:21:13 IST" duration-ms="3269" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="ecommerceTest(java.lang.Integer,java.lang.String)[pri:0, instance:pkg.Lab9_TestNG2@38425407]" started-at="2025-08-26T17:21:13 IST" name="ecommerceTest" data-provider="dp" finished-at="2025-08-26T17:21:24 IST" duration-ms="11366" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Mobile]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ecommerceTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:pkg.Lab9_TestNG2@38425407]" started-at="2025-08-26T17:21:24 IST" name="afterMethod" finished-at="2025-08-26T17:21:24 IST" duration-ms="419" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:pkg.Lab9_TestNG2@38425407]" started-at="2025-08-26T17:21:24 IST" name="beforeMethod" finished-at="2025-08-26T17:21:28 IST" duration-ms="3236" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="ecommerceTest(java.lang.Integer,java.lang.String)[pri:0, instance:pkg.Lab9_TestNG2@38425407]" started-at="2025-08-26T17:21:28 IST" name="ecommerceTest" data-provider="dp" finished-at="2025-08-26T17:21:40 IST" duration-ms="12429" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Monitors]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ecommerceTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:pkg.Lab9_TestNG2@38425407]" started-at="2025-08-26T17:21:40 IST" name="afterMethod" finished-at="2025-08-26T17:21:42 IST" duration-ms="2133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:pkg.Lab9_TestNG2@38425407]" started-at="2025-08-26T17:21:42 IST" name="afterClass" finished-at="2025-08-26T17:21:42 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:pkg.Lab9_TestNG2@38425407]" started-at="2025-08-26T17:21:50 IST" name="afterTest" finished-at="2025-08-26T17:21:50 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- pkg.Lab9_TestNG2 -->
+      <class name="pkg.Lab9_TestNG1">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:pkg.Lab9_TestNG1@43bc63a3]" started-at="2025-08-26T17:21:42 IST" name="beforeMethod" finished-at="2025-08-26T17:21:46 IST" duration-ms="3532" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="lab8Flow()[pri:0, instance:pkg.Lab9_TestNG1@43bc63a3]" started-at="2025-08-26T17:21:46 IST" name="lab8Flow" finished-at="2025-08-26T17:21:49 IST" duration-ms="3542" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lab8Flow -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:pkg.Lab9_TestNG1@43bc63a3]" started-at="2025-08-26T17:21:49 IST" name="afterMethod" finished-at="2025-08-26T17:21:50 IST" duration-ms="438" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- pkg.Lab9_TestNG1 -->
+    </test> <!-- edge -->
+    <test started-at="2025-08-26T17:21:50 IST" name="FireFox" finished-at="2025-08-26T17:22:29 IST" duration-ms="38808">
+      <class name="pkg.Lab9_TestNG2">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:pkg.Lab9_TestNG2@6a6cb05c]" started-at="2025-08-26T17:20:41 IST" name="beforeSuite" finished-at="2025-08-26T17:20:41 IST" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:pkg.Lab9_TestNG2@6a6cb05c]" started-at="2025-08-26T17:21:50 IST" name="beforeTest" finished-at="2025-08-26T17:21:50 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:pkg.Lab9_TestNG2@6a6cb05c]" started-at="2025-08-26T17:21:50 IST" name="beforeClass" finished-at="2025-08-26T17:21:50 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:pkg.Lab9_TestNG2@6a6cb05c]" started-at="2025-08-26T17:21:50 IST" name="beforeMethod" finished-at="2025-08-26T17:21:58 IST" duration-ms="8338" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="ecommerceTest(java.lang.Integer,java.lang.String)[pri:0, instance:pkg.Lab9_TestNG2@6a6cb05c]" started-at="2025-08-26T17:21:58 IST" name="ecommerceTest" data-provider="dp" finished-at="2025-08-26T17:22:07 IST" duration-ms="8651" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Mobile]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ecommerceTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:pkg.Lab9_TestNG2@6a6cb05c]" started-at="2025-08-26T17:22:07 IST" name="afterMethod" finished-at="2025-08-26T17:22:08 IST" duration-ms="1065" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:pkg.Lab9_TestNG2@6a6cb05c]" started-at="2025-08-26T17:22:08 IST" name="beforeMethod" finished-at="2025-08-26T17:22:15 IST" duration-ms="6573" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="ecommerceTest(java.lang.Integer,java.lang.String)[pri:0, instance:pkg.Lab9_TestNG2@6a6cb05c]" started-at="2025-08-26T17:22:15 IST" name="ecommerceTest" data-provider="dp" finished-at="2025-08-26T17:22:23 IST" duration-ms="8308" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Monitors]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ecommerceTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:pkg.Lab9_TestNG2@6a6cb05c]" started-at="2025-08-26T17:22:23 IST" name="afterMethod" finished-at="2025-08-26T17:22:24 IST" duration-ms="962" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:pkg.Lab9_TestNG2@6a6cb05c]" started-at="2025-08-26T17:22:24 IST" name="afterClass" finished-at="2025-08-26T17:22:24 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:pkg.Lab9_TestNG2@6a6cb05c]" started-at="2025-08-26T17:22:29 IST" name="afterTest" finished-at="2025-08-26T17:22:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:pkg.Lab9_TestNG2@6a6cb05c]" started-at="2025-08-26T17:22:29 IST" name="afterSuite" finished-at="2025-08-26T17:22:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- pkg.Lab9_TestNG2 -->
+      <class name="pkg.Lab9_TestNG1">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:pkg.Lab9_TestNG1@40a4337a]" started-at="2025-08-26T17:22:24 IST" name="beforeMethod" finished-at="2025-08-26T17:22:25 IST" duration-ms="1179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="lab8Flow()[pri:0, instance:pkg.Lab9_TestNG1@40a4337a]" started-at="2025-08-26T17:22:25 IST" name="lab8Flow" finished-at="2025-08-26T17:22:28 IST" duration-ms="3343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lab8Flow -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:pkg.Lab9_TestNG1@40a4337a]" started-at="2025-08-26T17:22:28 IST" name="afterMethod" finished-at="2025-08-26T17:22:29 IST" duration-ms="362" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- pkg.Lab9_TestNG1 -->
+    </test> <!-- FireFox -->
+  </suite> <!-- Suite -->
+</testng-results>
