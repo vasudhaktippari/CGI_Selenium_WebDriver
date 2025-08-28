@@ -3,13 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pkg.Lab9_TestNG2">
+      <class name="pkg.ExtentReport_TestNG">
         <methods>
-          <include name="ecommerceTest"/>
+          <include name="afterClass"/>
+          <include name="beforeSuite"/>
           <include name="afterMethod"/>
-          <include name="beforeMethod1"/>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+          <include name="afterTest"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="f" invocation-numbers="1 3"/>
         </methods>
-      </class> <!-- pkg.Lab9_TestNG2 -->
+      </class> <!-- pkg.ExtentReport_TestNG -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
