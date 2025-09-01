@@ -3,19 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pkg.ExtentReport_TestNG">
+      <class name="com.orangehrm.test.Login_Orangehrm">
         <methods>
-          <include name="afterClass"/>
-          <include name="beforeSuite"/>
-          <include name="afterMethod"/>
-          <include name="beforeTest"/>
-          <include name="afterSuite"/>
-          <include name="afterTest"/>
-          <include name="beforeClass"/>
-          <include name="beforeMethod"/>
-          <include name="f" invocation-numbers="1 3"/>
+          <include name="verifyLogin" invocation-numbers="0 1"/>
+          <include name="setup"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- pkg.ExtentReport_TestNG -->
+      </class> <!-- com.orangehrm.test.Login_Orangehrm -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

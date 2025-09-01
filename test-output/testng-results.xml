@@ -1,53 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-28T14:50:36 IST" name="Default suite" finished-at="2025-08-28T14:51:30 IST" duration-ms="53212">
+  <suite started-at="2025-09-01T17:03:40 IST" name="Default suite" finished-at="2025-09-01T17:03:59 IST" duration-ms="18943">
     <groups>
     </groups>
-    <test started-at="2025-08-28T14:50:36 IST" name="Default test" finished-at="2025-08-28T14:51:30 IST" duration-ms="53212">
-      <class name="pkg.ExtentReport_TestNG">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:pkg.ExtentReport_TestNG@4218d6a3]" started-at="2025-08-28T14:50:36 IST" name="beforeSuite" finished-at="2025-08-28T14:50:36 IST" duration-ms="19" status="PASS">
+    <test started-at="2025-09-01T17:03:40 IST" name="Default test" finished-at="2025-09-01T17:03:59 IST" duration-ms="18943">
+      <class name="com.orangehrm.test.Login_Orangehrm">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.test.Login_Orangehrm@4135c3b]" started-at="2025-09-01T17:03:41 IST" name="setup" finished-at="2025-09-01T17:03:53 IST" duration-ms="11247" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:pkg.ExtentReport_TestNG@4218d6a3]" started-at="2025-08-28T14:50:36 IST" name="beforeTest" finished-at="2025-08-28T14:50:36 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:pkg.ExtentReport_TestNG@4218d6a3]" started-at="2025-08-28T14:50:37 IST" name="beforeClass" finished-at="2025-08-28T14:50:37 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:pkg.ExtentReport_TestNG@4218d6a3]" started-at="2025-08-28T14:50:38 IST" name="beforeMethod" finished-at="2025-08-28T14:50:41 IST" duration-ms="3531" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="f(java.lang.String,java.lang.String)[pri:0, instance:pkg.ExtentReport_TestNG@4218d6a3]" started-at="2025-08-28T14:50:41 IST" name="f" data-provider="logindata" finished-at="2025-08-28T14:50:52 IST" duration-ms="10940" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:pkg.ExtentReport_TestNG@4218d6a3]" started-at="2025-08-28T14:50:52 IST" name="afterMethod" finished-at="2025-08-28T14:50:53 IST" duration-ms="1253" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:pkg.ExtentReport_TestNG@4218d6a3]" started-at="2025-08-28T14:50:53 IST" name="beforeMethod" finished-at="2025-08-28T14:50:56 IST" duration-ms="2174" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="f(java.lang.String,java.lang.String)[pri:0, instance:pkg.ExtentReport_TestNG@4218d6a3]" started-at="2025-08-28T14:50:56 IST" name="f" data-provider="logindata" finished-at="2025-08-28T14:51:11 IST" duration-ms="15001" status="FAIL">
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.test.Login_Orangehrm@4135c3b]" started-at="2025-09-01T17:03:53 IST" name="verifyLogin" data-provider="logindata" finished-at="2025-09-01T17:03:53 IST" duration-ms="49" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -60,44 +24,13 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h6[text()='Dashboard']"}
-  (Session info: chrome=139.0.7258.139)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.35.0', revision: '1c58e5028b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0395bae4b309fb996d3ad691fd5dccf0, findElement {using=xpath, value=//h6[text()='Dashboard']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.139, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\VASUDHA K T\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59291}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59291/devtoo..., se:cdpVersion: 139.0.7258.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0395bae4b309fb996d3ad691fd5dccf0]]>
+              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentReports.createTest(String)" because "com.orangehrm.test.Login_Orangehrm.extent" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h6[text()='Dashboard']"}
-  (Session info: chrome=139.0.7258.139)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.35.0', revision: '1c58e5028b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0395bae4b309fb996d3ad691fd5dccf0, findElement {using=xpath, value=//h6[text()='Dashboard']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.139, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\VASUDHA K T\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59291}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59291/devtoo..., se:cdpVersion: 139.0.7258.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0395bae4b309fb996d3ad691fd5dccf0
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-at pkg.LoginPage.dashisdisplayed(LoginPage.java:42)
-at pkg.ExtentReport_TestNG.f(ExtentReport_TestNG.java:64)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentReports.createTest(String)" because "com.orangehrm.test.Login_Orangehrm.extent" is null
+at com.orangehrm.test.Login_Orangehrm.verifyLogin(Login_Orangehrm.java:20)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -126,19 +59,19 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:pkg.ExtentReport_TestNG@4218d6a3]" started-at="2025-08-28T14:51:11 IST" name="afterMethod" finished-at="2025-08-28T14:51:11 IST" duration-ms="527" status="PASS">
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.orangehrm.test.Login_Orangehrm@4135c3b]" started-at="2025-09-01T17:03:53 IST" name="teardown" finished-at="2025-09-01T17:03:53 IST" duration-ms="354" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:pkg.ExtentReport_TestNG@4218d6a3]" started-at="2025-08-28T14:51:11 IST" name="beforeMethod" finished-at="2025-08-28T14:51:13 IST" duration-ms="2223" status="PASS">
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.orangehrm.test.Login_Orangehrm@4135c3b]" started-at="2025-09-01T17:03:53 IST" name="setup" finished-at="2025-09-01T17:03:58 IST" duration-ms="5426" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="f(java.lang.String,java.lang.String)[pri:0, instance:pkg.ExtentReport_TestNG@4218d6a3]" started-at="2025-08-28T14:51:13 IST" name="f" data-provider="logindata" finished-at="2025-08-28T14:51:20 IST" duration-ms="6490" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLogin(java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.test.Login_Orangehrm@4135c3b]" started-at="2025-09-01T17:03:58 IST" name="verifyLogin" data-provider="logindata" finished-at="2025-09-01T17:03:58 IST" duration-ms="9" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -151,35 +84,13 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:pkg.ExtentReport_TestNG@4218d6a3]" started-at="2025-08-28T14:51:20 IST" name="afterMethod" finished-at="2025-08-28T14:51:20 IST" duration-ms="550" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:pkg.ExtentReport_TestNG@4218d6a3]" started-at="2025-08-28T14:51:20 IST" name="beforeMethod" finished-at="2025-08-28T14:51:22 IST" duration-ms="1949" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="f(java.lang.String,java.lang.String)[pri:0, instance:pkg.ExtentReport_TestNG@4218d6a3]" started-at="2025-08-28T14:51:22 IST" name="f" data-provider="logindata" finished-at="2025-08-28T14:51:28 IST" duration-ms="5493" status="FAIL">
-          <params>
-            <param index="0">
-              <value is-null="true"/>
-            </param>
-            <param index="1">
-              <value is-null="true"/>
-            </param>
-          </params>
-          <exception class="java.lang.IllegalArgumentException">
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Keys to send should be a not null CharSequence]]>
+              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentReports.createTest(String)" because "com.orangehrm.test.Login_Orangehrm.extent" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
-at pkg.LoginPage.enterusername(LoginPage.java:30)
-at pkg.ExtentReport_TestNG.f(ExtentReport_TestNG.java:53)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentReports.createTest(String)" because "com.orangehrm.test.Login_Orangehrm.extent" is null
+at com.orangehrm.test.Login_Orangehrm.verifyLogin(Login_Orangehrm.java:20)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -208,27 +119,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:pkg.ExtentReport_TestNG@4218d6a3]" started-at="2025-08-28T14:51:28 IST" name="afterMethod" finished-at="2025-08-28T14:51:30 IST" duration-ms="1816" status="PASS">
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.orangehrm.test.Login_Orangehrm@4135c3b]" started-at="2025-09-01T17:03:58 IST" name="teardown" finished-at="2025-09-01T17:03:59 IST" duration-ms="664" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:pkg.ExtentReport_TestNG@4218d6a3]" started-at="2025-08-28T14:51:30 IST" name="afterClass" finished-at="2025-08-28T14:51:30 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:pkg.ExtentReport_TestNG@4218d6a3]" started-at="2025-08-28T14:51:30 IST" name="afterTest" finished-at="2025-08-28T14:51:30 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:pkg.ExtentReport_TestNG@4218d6a3]" started-at="2025-08-28T14:51:30 IST" name="afterSuite" finished-at="2025-08-28T14:51:30 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- pkg.ExtentReport_TestNG -->
+        </test-method> <!-- teardown -->
+      </class> <!-- com.orangehrm.test.Login_Orangehrm -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
