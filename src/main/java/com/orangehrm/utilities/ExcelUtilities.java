@@ -7,27 +7,27 @@ import java.io.IOException;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class ExcelUtilities {
+public class Excelutilities {
 
-    // Now accepts both excel file path and sheet name
-    public static Object[][] getdata(String excelPath, String sheetName) throws IOException {
-        File file1 = new File("C:\\Users\\VASUDHA K T\\Documents\\mavenproj\\src\\main\\resources\\Orangehrm_Testdata\\DataSheet.xlsx");
-        System.out.println("Reading Excel file: " + file1.getAbsolutePath());
+    static String projectpath = System.getProperty("user.dir");
+    static String excelpath = projectpath + "\\src\\main\\resources\\Orangehrm_Testdata\\DataSheet.xlsx";
 
-        FileInputStream fs = new FileInputStream(file1);
+    // Only sheetname is needed, because file path is already fixed above
+    public static Object[][] getdata(String sheetname) throws IOException {
+        FileInputStream fs = new FileInputStream(new File(excelpath));
         XSSFWorkbook workbook = new XSSFWorkbook(fs);
-        XSSFSheet worksheet = workbook.getSheet(sheetName);
+        XSSFSheet worksheet = workbook.getSheet(sheetname);
 
         int rowcount = worksheet.getPhysicalNumberOfRows();
-        int colcount = worksheet.getRow(0).getPhysicalNumberOfCells();
+        int colcount = worksheet.getRow(0).getLastCellNum();
+
         System.out.println("Rows: " + rowcount + " | Cols: " + colcount);
 
-        String[][] data = new String[rowcount - 1][colcount];
+        Object[][] data = new Object[rowcount - 1][colcount]; 
 
-        // Start from row 1 (skip header row)
-        for (int i = 1; i < rowcount; i++) {
+        for (int i = 1; i < rowcount; i++) {  
             for (int j = 0; j < colcount; j++) {
-                data[i - 1][j] = worksheet.getRow(i).getCell(j).getStringCellValue();
+                data[i - 1][j] = worksheet.getRow(i).getCell(j).toString();
             }
         }
 

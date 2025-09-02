@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="Testing_jenkins">
+  <test thread-count="5" name="Test_orangehrm">
     <classes>
-      <class name="com.orangehrm.test.Login_Orangehrm"/>
+      <class name="com.orangehrm.test.LoginTest"/>
     </classes>
-  </test> <!-- Testing_jenkins -->
+  </test> <!-- Test_orangehrm -->
 </suite> <!-- Suite -->

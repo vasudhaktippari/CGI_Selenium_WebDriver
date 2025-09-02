@@ -45,8 +45,8 @@ public class StepDefinations {
 
 	@Then("Enter the invalid username and password")
 	public void enter_the_invalid_username_and_password() {
-		driver.findElement(By.name("username")).sendKeys("Sneha");
-	    driver.findElement(By.name("password")).sendKeys("sneha@123");
+		driver.findElement(By.name("username")).sendKeys("vasudha");
+	    driver.findElement(By.name("password")).sendKeys("vasu@123");
 	    
 	}
 

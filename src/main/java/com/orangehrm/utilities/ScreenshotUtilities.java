@@ -2,29 +2,47 @@
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.StandardCopyOption;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import ru.yandex.qatools.ashot.AShot;
+import ru.yandex.qatools.ashot.Screenshot;
+import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
+
+import javax.imageio.ImageIO;
 
 public class ScreenshotUtilities {
 
-    public static String captureScreenshot(WebDriver driver, String screenshotName) throws IOException {
-        // Take screenshot
-        File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+    // Wait until page is fully loaded
+    private static void waitForPageLoad(WebDriver driver) {
+        new WebDriverWait(driver, java.time.Duration.ofSeconds(10))
+            .until((ExpectedCondition<Boolean>) wd ->
+                ((JavascriptExecutor) wd).executeScript("return document.readyState").equals("complete"));
+    }
 
-        // Define destination path
-        String destPath = System.getProperty("user.dir") + "src\\main\\resources\\Orangehrm_Screenshot\\Screenshots\\" + screenshotName + ".png";
-        File destFile = new File(destPath);
+    // Capture Full Page Screenshot with timestamp
+    public static String capturescreen(WebDriver driver, String testName) throws IOException {
+        waitForPageLoad(driver); // Ensure page fully loaded
 
-        // Create folder if not exists
-        destFile.getParentFile().mkdirs();
+        // Timestamp for uniqueness
+        String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+        String projectPath = System.getProperty("user.dir");
+        String screenPath = projectPath + "\\src\\main\\resources\\Orangehrm_Screenshot\\"
+                            + testName + "_" + timestamp + ".png";
 
-        // Copy file
-        Files.copy(srcFile.toPath(), destFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
+        // Use AShot for full page screenshot
+        Screenshot screenshot = new AShot()
+                .shootingStrategy(ShootingStrategies.viewportPasting(1000))
+                .takeScreenshot(driver);
 
-        return destPath;
+        File destFile = new File(screenPath);
+        ImageIO.write(screenshot.getImage(), "PNG", destFile);
+
+        return screenPath;
     }
 }
